@@ -38,3 +38,17 @@ export interface HealthResponse {
     status: string;
     timestamp: string;
 } 
+
+export interface SendTransactionRequest {
+    to: string;
+    value: string;
+    data: string;
+}
+
+export interface SendTransactionResponse {
+    transactionHash: string;
+}
+
+export interface RequestAccountsResponse {
+    accounts: string[];
+}
